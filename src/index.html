@@ -6,7 +6,41 @@
     <link rel="stylesheet" href="output.css">
     <title>Age Calculator</title>
 </head>
-<body>
+<body class="bg-slate-900">
+    <div class="container w-3/5 min-w[450px] absolute transform-center left-1/2 top-1/2 py-12 px-8">
+
+        <div class="inputs-wrapper bg-red-700 py-6 flex flex-col px-3 rounded-md sm:flex-row sm:justify-between md:justify-around">
+            <input type="date" id="date-input" class="rounded-md h-8 p-1 bg-slate-50 font-medium sm:w-3/5 md:w-3/5 md:h-9">
+            <button class=" bg-slate-50 mt-3 p-1 rounded-md font-semibold sm:mt-0 md:h-9 md:px-3">Calculat</button>
+        </div>
+
+        <div class="output-wrapper grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
+            <div>
+                <span id="years">
+                    -
+                </span>
+                <p>
+                    years
+                </p>
+            </div>
+            <div>
+                <span id="months">
+                    -
+                </span>
+                <p>
+                    months
+                </p>
+            </div>
+            <div class="sm:col-span-2 md:col-auto">
+                <span id="days">
+                    -
+                </span>
+                <p>
+                    days
+                </p>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

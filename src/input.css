@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transform-center{
+    transform: translate(-50% ,-50%);
+}
+
+
+.output-wrapper div{
+    background-color: rgb(185, 28, 28);
+    text-align: center;
+    width:80px;
+    height:80px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    place-items: center;
+}
+
+.output-wrapper span{
+    font-weight: 700;
+    color: beige;
+}
+.output-wrapper p{
+    font-weight: 500;
+    color: darkgray;
+}
