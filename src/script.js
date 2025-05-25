@@ -19,6 +19,7 @@ function ageCalculate(){
     (birthDetails.date > currentDate && birthDetails.month == currentMonth && birthDetails.year == currentYear)
     ){
         alert('not born yet');
+        displayResult("!","!","!");
         return
     }
 
@@ -54,6 +55,11 @@ function leapchecker(year){
     }
 };
 
-function  displayResult(){
+function  displayResult(year , month , days){
+    
+    document.getElementById("years").innerText = year;
 
-}
+    document.getElementById("months").innerText = month;
+
+    document.getElementById("days").innerText = days;
+};
